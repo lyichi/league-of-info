@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LoI: Rengar</title>
+    <link rel=stylesheet href="../../main.css" type="text/css">
+    <link rel=stylesheet href=".././champPage.css" type="text/css">
+    <link rel=icon href="../../images/favicon.ico">
+    
+    <style>
+        /* Stats CSS different for each character */
+        
+        #statAD {width: 245px;}
+        #statDef {width: 140px;}
+        #statAP {width: 70px;}
+        #statDiff {width: 280px;}
+        
+        /* Amount of skins for slideshow differs */
+        
+        #skinSlide > figure:nth-child(1) {
+            -webkit-animation: skinshow 9s 6s infinite;
+            -moz-animation: skinshow 9s 6s infinite;
+            -ms-animation: skinshow 9s 6s infinite;
+            -o-animation: skinshow 9s 6s infinite;
+            animation: skinshow 9s 6s infinite;
+        }
+
+        #skinSlide > figure:nth-child(2) {
+            -webkit-animation: skinshow 9s 3s infinite;
+            -moz-animation: skinshow 9s 3s infinite;
+            -ms-animation: skinshow 9s 3s infinite;
+            -o-animation: skinshow 9s 3s infinite;
+            animation: skinshow 9s 3s infinite;
+        }
+
+        #skinSlide > figure:nth-child(3) {
+            -webkit-animation: skinshow 9s 0s infinite;
+            -moz-animation: skinshow 9s 0s infinite;
+            -ms-animation: skinshow 9s 0s infinite;
+            -o-animation: skinshow 9s 0s infinite;
+            animation: skinshow 9s 0s infinite;
+        }
+        
+        @-webkit-keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @-moz-keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header id="mainHeader">
+        <div>
+            <a href="../../index.html"><img src="../../images/logo.png" alt="logo" id="logo"></a>
+            <ul id="mainMenu">
+                <li class="btnMainMenu"><a href="../../champions/index.html">CHAMPIONS</a></li>
+                <li class="btnMainMenu"><a href="../../items/index.html">ITEMS</a></li>
+                <li class="btnMainMenu"><a href="../../lore/index.html">LORE</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="mainSection">
+        <h2>Rengar, the Pridestalker</h2>
+        <section id="subSect1">
+            <div id="skinSlide">
+                <figure>
+                    <img src="../../images/skins/Rengar/Rengar_2.jpg" width="216" height="392" alt="Rengar Skin 2">
+                </figure>
+
+                <figure>
+                    <img src="../../images/skins/Rengar/Rengar_1.jpg" width="216" height="392" alt="Rengar Skin 1">
+                </figure>
+
+                <figure>
+                    <img src="../../images/skins/Rengar/Rengar_0.jpg" width="216" height="392" alt="Rengar Skin 0">
+                </figure>
+            </div>
+
+            <div id="lore">
+                <p>On every wall of his den, the trophy hunter Rengar mounts the heads, horns, claws, and fangs of the most lethal creatures in Valoran. Though his collection is extensive, he remains unsatisfied, tirelessly seeking greater game. He takes time with every kill, studying his prey, learning, and preparing himself for the next encounter with the one monster he never managed to defeat.</p>
+
+                <p>Rengar never knew his real parents, but was raised by a human who was revered as a legendary hunter. He was an ideal pupil, intently absorbing the lessons of his father, and improving them with his uncanny feral instincts. Before his mane had fully grown, Rengar set off on his own and claimed a wide territory for himself. Along its perimeter, he mounted the skulls of his slain prey - a warning to would-be aggressors. He thought undisputed reign of a region would fulfill him, but instead, he grew restless. No beasts in his domain proved challenging prey, and without formidable adversaries to push his limits, Rengar's spirit waned. He feared that no worthwhile game remained, that he would never again feel the thrill of the hunt. Just when things seemed their bleakest, he encountered the monster. It was a disturbing, alien thing, distinctly out of place in his world. It bore huge scything claws and devoured any animal that strayed across its path. Overzealous at the prospect of a challenge, Rengar ambushed the monster in haste. It far outclassed anything he'd hunted before. Their fight was savage, and each suffered crippling wounds. Rengar lost an eye, but the most grievous blow was to his pride. He had never before failed to make the kill. Worse yet, the severity of his injuries forced him to retreat. Over the following days, he hovered on the threshold between life and death. He was wracked with pain, but beneath it, he felt a glimmer of joy. The hunt was on. If such powerful beings existed in the world, he would find them, and stack their heads high. The monster, however, was a kill he wanted to savor. On his den's largest wall, he reserves a space for the beast's head, a trophy he swears will one day be the centerpiece of his collection.</p>
+
+                <p>"Prey on the weak and you will survive, prey on the strong and you will live."
+                <br>-- Rengar</p>
+            </div>
+        </section>
+        <section id="subSect2">
+            <h2>Stats and Abilities</h2>
+            <div id="stats">
+                <div class="statContainer"><p>Attack Power:</p><div id="statAD" class="statBar">7</div></div>
+                <div class="statContainer"><p>Defense Power:</p><div id="statDef" class="statBar">4</div></div>
+                <div class="statContainer"><p>Ability Power:</p><div id="statAP" class="statBar">2</div></div>
+                <div class="statContainer"><p>Difficulty:</p><div id="statDiff" class="statBar">8</div></div>
+            </div>
+
+            <div id="skills">
+                <div id="skillsContainer">
+                    <figure class="skill">
+                        <img src="../../images/skills/Rengar/RengarSkill0.png" width ="64" height="64" alt="Rengar Passive">
+                        <figcaption class="skillToolTip">
+                            <p>Unseen Predator</p>
+                            <p class="skillDesc">While in brush or stealth Rengar will leap at the target when using his basic attack.</p>
+
+                            <p class="skillDesc">Rengar builds 1 point of Ferocity with each ability he uses on enemies. When reaching 5 points of Ferocity, Rengar's next ability becomes empowered, granting it a bonus effect.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Rengar/RengarSkill1.png" width ="64" height="64" alt="Rengar Skill 1">
+                        <figcaption class="skillToolTip">
+                            <p>Savagery</p>
+                            <p class="skillDesc">Rengar's next basic attack deals bonus damage.</p>
+
+                            <p class="skillDesc">Ferocity effect: Rengar deals enhanced damage and grants him Attack Speed and Attack Damage.</p>
+                            
+                            <p class="skillDesc">The next basic attack within 3 seconds deals 100/105/110/115/120% <span class="highlightAD">(0)</span> of Rengar's Attack Damage plus 30/60/90/120/150 physical damage.
+                                <br>Ferocity effect: The next basic attack within 3 seconds deals 150% <span class="highlightAD">1</span> of Rengar's Attack Damage plus 0 physical damage and grants [0]% Attack Speed and 10% Attack Damage for 5 seconds (Damage and Attack Speed scale with Rengar's level).</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Rengar/RengarSkill2.png" width ="64" height="64" alt="Rengar Skill 2">
+                        <figcaption class="skillToolTip">
+                            <p>Battle Roar</p>
+                            <p class="skillDesc">Rengar lets out a battle roar, damaging enemies and gaining bonus Armor and Magic Resist for a short duration.</p>
+
+                            <p class="skillDesc">Ferocity effect: Rengar heals for a large amount.</p>
+                            
+                            <p class="skillDesc">Deals 50/80/110/140/170 <span class="highlightAP">(+80% Ability Power)</span> magic damage to enemies in the area. Rengar's Armor and Magic Resist are increased by 10/15/20/25/30 for 4 seconds. The bonus Armor and Magic Resist is increased by 50% for each enemy Champion or large Monster hit.
+                                <br>Ferocity effect: Deals 0 <span class="highlightAP">(+80% Ability Power)</span> magic damage to enemies in the area, grants the defenses from the normal ability, and restores between 0 and 0 Health based on missing Health (healing and damage values scale with Rengar's level).</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Rengar/RengarSkill3.png" width ="64" height="64" alt="Rengar Skill 3">
+                        <figcaption class="skillToolTip">
+                            <p>Bola Strike</p>
+                            <p class="skillDesc">Rengar throws a bola, slowing the first target hit for a short duration.</p>
+
+                            <p class="skillDesc">Ferocity effect: Roots the target.</p>
+                            
+                            <p class="skillDesc">Throws a bola dealing 50/100/150/200/250 <span class="highlightAD">(+70% bonus Attack Damage)</span> physical damage and slowing an enemy by 60/65/70/75/80% for 2.5 seconds. This slow diminishes over time.
+                                <br>Ferocity effect: Deals 0 <span class="highlightAD">(+70% bonus Attack Damage)</span> physical damage and roots the target for 1.75 seconds on top of the normal slow (damage scales with Rengar's level).</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Rengar/RengarSkill4.png" width ="64" height="64" alt="Rengar Skill 4">
+                        <figcaption class="skillToolTip">
+                            <p>Thrill of the Hunt</p>
+                            <p class="skillDesc">Rengar activates his predatory instincts, stealthing himself and revealing all enemy Champions in a large radius around him. While stealthed, he gains Movement Speed when he moves towards enemies and his next attack will cause him to leap. He gains Movement Speed and rapidly generates Ferocity after he breaks stealth.</p>
+
+                            <p class="skillDesc">Rengar stealths himself for 7 seconds after a 1 second (delayed to 3 seconds if taking damage) delay and reveals enemy Champions within 2000/3000/4000 range. While stealthed, Rengar gains 15% Movement Speed when moving toward enemy champions and his next attack will cause him to leap.After breaking stealth, Rengar gains 25/35/45% Movement Speed and generates 5 Ferocity over 5 seconds.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer id="mainFooter">
+        <div class="footDiv">
+            Email: strayu@pomf.it
+        </div>
+        <div class="footDiv">
+            &copy; Jasper Dorado
+        </div>
+        <div class="footDiv" id="socialNet">
+            <a href=# id="facebook" class="socNetButton"></a>
+            <a href=# id="twitter" class="socNetButton"></a>
+            <a href=# id="google" class="socNetButton"></a>
+        </div>
+    </footer>
+</div>    
+</body>
+</html>

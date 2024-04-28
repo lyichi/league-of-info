@@ -1,0 +1,10 @@
+#champPortraits {
+    width: 100%;
+    max-width: 935px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.portrait {
+    margin: 5px;
+}

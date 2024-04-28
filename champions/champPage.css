@@ -1,0 +1,136 @@
+#mainSection {
+    min-height: 480px;   
+}
+
+#subSect1 {
+    position: relative;
+    background: red;
+}
+
+#skinSlide {
+    position: relative;
+    height: 392px;
+    width: 216px;
+    margin: 0;
+    padding: 10px;
+    background: 0;
+    float: left;
+}
+
+#skinSlide > figure {
+    margin: 0;
+    position: absolute;
+}
+
+#lore {
+    float: left;
+    width: 100%;
+    max-width: 744px;
+    max-height: 412px;
+    padding: 0 10px;
+    background: 0;
+    overflow: auto;
+}
+
+#lore > p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+#subSect2 {
+    clear: left;
+    background: #353535;
+    height: 100%;
+}
+
+#stats {
+    width: 500px;
+    padding: 1px 0;
+    display: block;
+}
+
+.statContainer {
+    background: 0;
+    position: relative;
+    padding-left: 10px;
+}   
+
+.statBar {
+    top: -3px;
+    left: 120px;
+    height: 16px;
+    padding: 3px 0;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;   
+    font-size: 14px;
+}
+
+#statAD {
+    background-color: #FF3D54;
+}
+
+#statDef {
+    background-color: #6ADE74;
+}
+
+#statAP {
+    background-color: #3098FF;
+}
+
+#statDiff {
+    background-color: #8F6ADE; 
+}
+
+#skills {
+    height: 136px;
+    width: 500px;
+    display: block;
+    margin-top: -136px;
+    float:right;
+}
+
+#skillsContainer {
+    width: 386px;
+    position: relative;
+    top: -32px;
+    margin: 67px auto 0 auto;
+}
+
+#skillsContainer > figure {
+    width: 64px;
+    padding: 0;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.skillToolTip {
+    position: absolute;
+    bottom: 74px;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.9);
+    padding: 0 15px;
+    display: none;
+}
+
+.skillDesc {
+    font-size: 12px;
+    color: #C9C9C9;
+}
+
+.highlightAP {
+    color: #99FF66;   
+}
+
+.highlightAD {
+    color: #FFA347;   
+}
+
+.highlightSpecial {
+    color: #00FFFF;   
+}
+
+.skill:hover .skillToolTip {
+    display: block;
+}

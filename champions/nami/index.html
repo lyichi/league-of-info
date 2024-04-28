@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LoI: Nami</title>
+    <link rel=stylesheet href="../../main.css" type="text/css">
+    <link rel=stylesheet href=".././champPage.css" type="text/css">
+    <link rel=icon href="../../images/favicon.ico">
+    
+    <style>
+        /* Stats CSS different for each character */
+        
+        #statAD {width: 140px;}
+        #statDef {width: 105px;}
+        #statAP {width: 245px;}
+        #statDiff {width: 175px;}
+        
+        /* Amount of skins for slideshow differs */
+        
+        #skinSlide > figure:nth-child(1) {
+            -webkit-animation: skinshow 9s 6s infinite;
+            -moz-animation: skinshow 9s 6s infinite;
+            -ms-animation: skinshow 9s 6s infinite;
+            -o-animation: skinshow 9s 6s infinite;
+            animation: skinshow 9s 6s infinite;
+        }
+
+        #skinSlide > figure:nth-child(2) {
+            -webkit-animation: skinshow 9s 3s infinite;
+            -moz-animation: skinshow 9s 3s infinite;
+            -ms-animation: skinshow 9s 3s infinite;
+            -o-animation: skinshow 9s 3s infinite;
+            animation: skinshow 9s 3s infinite;
+        }
+
+        #skinSlide > figure:nth-child(3) {
+            -webkit-animation: skinshow 9s 0s infinite;
+            -moz-animation: skinshow 9s 0s infinite;
+            -ms-animation: skinshow 9s 0s infinite;
+            -o-animation: skinshow 9s 0s infinite;
+            animation: skinshow 9s 0s infinite;
+        }
+        
+        @-webkit-keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @-moz-keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @keyframes skinshow {
+            0%                  {opacity: 1}
+            16.665%             {opacity: 1}
+            33.33%              {opacity: 0}
+            66.67%              {opacity: 0}
+            83.33500000000001%  {opacity: 0}
+            100%                {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header id="mainHeader">
+        <div>
+            <a href="../../index.html"><img src="../../images/logo.png" alt="logo" id="logo"></a>
+            <ul id="mainMenu">
+                <li class="btnMainMenu"><a href="../../champions/index.html">CHAMPIONS</a></li>
+                <li class="btnMainMenu"><a href="../../items/index.html">ITEMS</a></li>
+                <li class="btnMainMenu"><a href="../../lore/index.html">LORE</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="mainSection">
+        <h2>Nami, the Tidecaller</h2>
+        <section id="subSect1">
+            <div id="skinSlide">
+                <figure>
+                    <img src="../../images/skins/Nami/Nami_2.jpg" width="216" height="392" alt="Nami Skin 2">
+                </figure>
+
+                <figure>
+                    <img src="../../images/skins/Nami/Nami_1.jpg" width="216" height="392" alt="Nami Skin 1">
+                </figure>
+
+                <figure>
+                    <img src="../../images/skins/Nami/Nami_0.jpg" width="216" height="392" alt="Nami Skin 0">
+                </figure>
+            </div>
+
+            <div id="lore">
+                <p>Nami channels the primal energies of the ocean, harnessing its mystical restorative properties and commanding the raw power of the tides themselves. Though many doubted her, Nami had the bravery and determination to take on a dangerous quest when no one else would. Now her people believe she is the Tidecaller, a chosen one destined to complete a quest essential to the survival of her entire race.</p>
+
+                <p>The Tidecaller's sacred duty is to acquire a moonstone, a powerful object found only in the towering reaches of the surface world. Her people, the Marai, rely on the moonstone's light to ward off the terrors of the depths. However, the stone's power lasts only one hundred years. Before its light fades, the Tidecaller must journey into the Great Deep, retrieve an abyssal pearl, and carry it to the surface. There, on the night of the winter solstice of the hundredth year, the Tidecaller makes a ceremonial exchange with a landwalker bearing a moonstone. By trading the pearl for the moonstone, the Tidecaller ensures the survival of the Marai for another century.</p>
+
+                <p>However, in Nami's time, as the hundred years drew to a close, no Tidecaller had been found. Without a chosen one to complete the quest, her people would face disaster, but the Marai waited in faith that the Tidecaller would appear. Nami refused to sit idle, insisting that without a Tidecaller to save them, someone had to act. Bravely, she decided to begin the quest herself and ventured alone into the dangerous depths. None expected her to survive, but after six days of battles with untold horrors, Nami returned with the pearl in hand. The Marai hailed her as the new Tidecaller. All that remained was for Nami to journey to the surface and complete the exchange.</p>
+                
+                <p>When Nami arrived at the surface, however, she found only an empty shore. She waited for days in a mystic cove, unsure of what to do. In all the legends of the Tidecallers, the bearer of the moonstone had never failed to arrive. Nami faced a choice. She knew the surface world only through tale and rumor, but the survival of the Marai depended upon her. Summoning the tide to bear her ashore, Nami began her search for the moonstone and became the first of her kind to explore the world above the ocean. She left her home behind, and vowed not to return until she had completed the Tidecaller's quest.</p>
+                
+                <p>"I am the tide, and I cannot be turned."
+                <br>-- Nami</p>
+            </div>
+        </section>
+        <section id="subSect2">
+            <h2>Stats and Abilities</h2>
+            <div id="stats">
+                <div class="statContainer"><p>Attack Power:</p><div id="statAD" class="statBar">4</div></div>
+                <div class="statContainer"><p>Defense Power:</p><div id="statDef" class="statBar">3</div></div>
+                <div class="statContainer"><p>Ability Power:</p><div id="statAP" class="statBar">7</div></div>
+                <div class="statContainer"><p>Difficulty:</p><div id="statDiff" class="statBar">5</div></div>
+            </div>
+
+            <div id="skills">
+                <div id="skillsContainer">
+                    <figure class="skill">
+                        <img src="../../images/skills/Nami/NamiSkill0.png" width ="64" height="64" alt="Nami Passive">
+                        <figcaption class="skillToolTip">
+                            <p>Surging Tides</p>
+                            <p class="skillDesc">When Nami's abilities hit allied champions they gain Movement Speed for a short duration.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Nami/NamiSkill1.png" width ="64" height="64" alt="Nami Skill 1">
+                        <figcaption class="skillToolTip">
+                            <p>Aqua Prison</p>
+                            <p class="skillDesc">Sends a bubble towards a targeted area, dealing damage and stunning all enemies on impact.</p>
+
+                            <p class="skillDesc">Sends a bubble towards a targeted area, dealing 75/130/185/240/295 <span class="highlightAP">(+50% Ability Power)</span> magic damage to enemies, and stunning them for 1.5 seconds.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Nami/NamiSkill2.png" width ="64" height="64" alt="Nami Skill 2">
+                        <figcaption class="skillToolTip">
+                            <p>Ebb and Flow</p>
+                            <p class="skillDesc">Unleashes a stream of water that bounces back and forth between allies and enemies, healing allies and damaging enemies.</p>
+
+                            <p class="skillDesc">hat bounces back and forth between allies and enemies.<br>
+                                On Ally Hit: Heals 65/95/125/155/185 <span class="highlightAP">(+30% Ability Power)</span> Health and will bounce to a nearby enemy champion.<br>
+                                On Enemy Hit: Deals 70/110/150/190/230 <span class="highlightAP">(+50% Ability Power)</span> magic damage and bounces to a nearby allied champion.Bounces to each target only once, and hits up to 3 targets. The damage and healing value is modified by <span class="highlightAP">-15% + (7.5% per 100 Ability Power)</span> each bounce.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Nami/NamiSkill3.png" width ="64" height="64" alt="Nami Skill 3">
+                        <figcaption class="skillToolTip">
+                            <p>Tidecaller's Blessing</p>
+                            <p class="skillDesc">Empowers an allied champion for a short duration. The ally's basic attacks deal bonus magic damage and slow the target.</p>
+
+                            <p class="skillDesc">Empowers an allied champion for 6 seconds or 3 basic attacks. The ally's basic attacks deal 25/40/55/70/85 <span class="highlightAP">(+20% Ability Power)</span> bonus magic damage and slow the target by 15/20/25/30/35% <span class="highlightAP">([+5% Ability Power]%)</span> for 1 second.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Nami/NamiSkill4.png" width ="64" height="64" alt="Nami Skill 4">
+                        <figcaption class="skillToolTip">
+                            <p>Tidal Wave</p>
+                            <p class="skillDesc">Summons a massive Tidal Wave that knocks up, slows, and damages enemies.</p>
+
+                            <p class="skillDesc">Summons a Tidal Wave from Nami's position.The Tidal Wave knocks up enemies and slows them by 50/60/70%, dealing 150/250/350 <span class="highlightAP">(+60% Ability Power)</span> magic damage. The duration of the slow increases based on how far the Tidal Wave has traveled, with a minimum duration of 2 seconds and a maximum of 4 seconds.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer id="mainFooter">
+        <div class="footDiv">
+            Email: strayu@pomf.it
+        </div>
+        <div class="footDiv">
+            &copy; Jasper Dorado
+        </div>
+        <div class="footDiv" id="socialNet">
+            <a href=# id="facebook" class="socNetButton"></a>
+            <a href=# id="twitter" class="socNetButton"></a>
+            <a href=# id="google" class="socNetButton"></a>
+        </div>
+    </footer>
+</div>    
+</body>
+</html>

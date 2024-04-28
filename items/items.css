@@ -1,0 +1,43 @@
+#itemSection {
+    width: 100%;
+    max-width: 850px;
+    padding: 30px;
+    margin: 0px auto;
+    background: 0;
+}
+
+#itemSection > div {
+    margin: 0 auto;
+    width: 828px;
+}
+
+.item {
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.itemToolTip {
+    width: 222px;
+    top: 58px;
+    left: -82px;
+    background-color: rgba(25, 25, 25, 0.9);
+    padding: 0 15px;
+    display: none;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.itemDesc {
+    font-size: 12px;
+    color: #C9C9C9;
+}
+
+.item:hover .itemToolTip {
+    display: block;
+}

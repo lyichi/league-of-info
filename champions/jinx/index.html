@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LoI: Jinx</title>
+    <link rel=stylesheet href="../../main.css" type="text/css">
+    <link rel=stylesheet href=".././champPage.css" type="text/css">
+    <link rel=icon href="../../images/favicon.ico">
+    
+    <style>
+        /* Stats CSS different for each character */
+        
+        #statAD {width: 315px;}
+        #statDef {width: 70px;}
+        #statAP {width: 140px;}
+        #statDiff {width: 210px;}
+        
+        /* Amount of skins for slideshow differs */
+           
+        #skinSlide > figure:nth-child(1) {
+            -webkit-animation: skinshow 6s 3s infinite;
+            -moz-animation: skinshow 6s 3s infinite;
+            -ms-animation: skinshow 6s 3s infinite;
+            -o-animation: skinshow 6s 3s infinite;
+            animation: skinshow 6s 3s infinite;
+        }
+
+        #skinSlide > figure:nth-child(2) {
+            -webkit-animation: skinshow 6s 0s infinite;
+            -moz-animation: skinshow 6s 0s infinite;
+            -ms-animation: skinshow 6s 0s infinite;
+            -o-animation: skinshow 6s 0s infinite;
+            animation: skinshow 6s 0s infinite;
+        }
+        
+        @-webkit-keyframes skinshow {
+            0%                  {opacity: 1}
+            25%                 {opacity: 1}
+            50%                 {opacity: 0}
+            50%                 {opacity: 0}
+            75%                 {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @-moz-keyframes skinshow {
+            0%                  {opacity: 1}
+            25%                 {opacity: 1}
+            50%                 {opacity: 0}
+            50%                 {opacity: 0}
+            75%                 {opacity: 0}
+            100%                {opacity: 1}
+        }
+        
+        @keyframes skinshow {
+            0%                  {opacity: 1}
+            25%                 {opacity: 1}
+            50%                 {opacity: 0}
+            50%                 {opacity: 0}
+            75%                 {opacity: 0}
+            100%                {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header id="mainHeader">
+        <div>
+            <a href="../../index.html"><img src="../../images/logo.png" alt="logo" id="logo"></a>
+            <ul id="mainMenu">
+                <li class="btnMainMenu"><a href="../../champions/index.html">CHAMPIONS</a></li>
+                <li class="btnMainMenu"><a href="../../items/index.html">ITEMS</a></li>
+                <li class="btnMainMenu"><a href="../../lore/index.html">LORE</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="mainSection">
+        <h2>Jinx, the Loose Cannon</h2>
+        <section id="subSect1">
+            <div id="skinSlide">
+                <figure>
+                    <img src="../../images/skins/Jinx/Jinx_1.jpg" width="216" height="392" alt="Jinx Skin 1">
+                </figure>
+
+                <figure>
+                    <img src="../../images/skins/Jinx/Jinx_0.jpg" width="216" height="392" alt="Jinx Skin 0">
+                </figure>
+            </div>
+
+            <div id="lore">
+                <p>Jinx lives to wreak havoc without a thought for the consequences, leaving a trail of mayhem and panic in her wake. A manic and impulsive criminal, she despises nothing more than boredom, and gleefully brings her own volatile brand of pandemonium to the one place she finds dullest: Piltover. With an arsenal of deadly toys, she unleashes the brightest explosions and loudest blasts - all the better to shock and surprise the hapless authorities. Always just out of the law's reach, Jinx's favorite game is to toy with Piltover's finest - especially Vi.</p>
+
+                <p>Piltover had long been known as the City of Progress, a place where peace and order reigned. That serenity was challenged when a new kind of criminal arrived, the likes of whom had never been seen. This mysterious outlaw unleashed a series of warped and destructive capers that endangered the entire city, and left its people reeling from the worst crime spree in Piltover's history.</p>
+
+                <p>As the string of crimes without rhyme or reason hit the city, sightings of the lawbreaker emerged. Though the young woman's origins were a mystery, some saw traces of Piltover hextech in her firearms, while others described the street fashions of Zaun in her dress. Because her arrival always brought trouble with it, those who crossed her path soon gave her a name: Jinx.</p>
+                
+                <p>As Jinx's rampage escalated, Caitlyn - the sheriff of Piltover - responded by declaring a state of emergency and organizing a city-wide manhunt. In typical Jinx fashion, the criminal marked the Piltover treasury, the city's most secure building, with a direct challenge to its most abrasive officer. With a caricature of Vi's face splashed across the treasury's facade, and a scribbled time and date of her supposed raid, Jinx was openly daring the enforcer to stop her from robbing it.</p>
+                
+                <p>Determined to put the troublemaker behind bars, Vi watched and waited outside the treasury until Jinx's time had finally come. True to her scrawled promise, the smiling menace showed her face. Knowing this was her chance to capture the outlaw, Vi gave chase into the building's interior. She smashed through wall after wall to chase down Jinx, who giggled as she lit up the evacuated treasury with fiery explosions. Vi finally cornered the criminal inside the vault, but Jinx wasn't done just yet. With a maniacal laugh, she fired a barrage of rockets, bringing the entire building down upon them both.</p>
+                
+                <p>When Vi finally crawled out of the ruins, the battered enforcer found no trace of Jinx. Adding insult to injury, not a single ounce of gold had been taken from the ruined vault. Instead, the criminal left a parting message to her favorite officer of the law - a challenge only now visible through the gaping opening in Piltover's skyline. The lights of the city spelled out a simple taunt: you'll never catch me. As Vi read the message, she heard the distant laughter of her new nemesis, and the city plunged into utter darkness for the very first time.</p>
+                
+                <p>"Oh look - I'm opening my box of care! Oh wait - it's empty!"
+                <br>-- Jinx</p>
+            </div>
+        </section>
+        <section id="subSect2">
+            <h2>Stats and Abilities</h2>
+            <div id="stats">
+                <div class="statContainer"><p>Attack Power:</p><div id="statAD" class="statBar">9</div></div>
+                <div class="statContainer"><p>Defense Power:</p><div id="statDef" class="statBar">2</div></div>
+                <div class="statContainer"><p>Ability Power:</p><div id="statAP" class="statBar">4</div></div>
+                <div class="statContainer"><p>Difficulty:</p><div id="statDiff" class="statBar">6</div></div>
+            </div>
+
+            <div id="skills">
+                <div id="skillsContainer">
+                    <figure class="skill">
+                        <img src="../../images/skills/Jinx/JinxSkill0.png" width ="64" height="64" alt="Jinx Passive">
+                        <figcaption class="skillToolTip">
+                            <p>Get Excited!</p>
+                            <p class="skillDesc">Jinx receives massively increased Movement Speed whenever she damages an enemy champion, tower, or inhibitor that is then killed or destroyed within 3 seconds.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Jinx/JinxSkill1.png" width ="64" height="64" alt="Jinx Skill 1">
+                        <figcaption class="skillToolTip">
+                            <p>Switcheroo!</p>
+                            <p class="skillDesc">Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.</p>
+
+                            <p class="skillDesc">Jinx swaps weapons.<br>
+                                <span class="highlightSpecial">Rocket Launcher</span>: Basic attacks deal 110% Damage to Jinx's target and all nearby enemies, gain 75/100/125/150/175 range, and drain Mana.<br>
+                                <span class="highlightSpecial">Minigun</span>: Basic attacks grant additional Attack Speed for 2.5 seconds. This effect stacks up to 3 times for a total bonus of 30/55/80/105/130%. Stacks fall off one at a time and only benefit Jinx's first attack after switching to Rocket Launcher.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Jinx/JinxSkill2.png" width ="64" height="64" alt="Jinx Skill 2">
+                        <figcaption class="skillToolTip">
+                            <p>Zap!</p>
+                            <p class="skillDesc">Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it if it is not stealthed.</p>
+
+                            <p class="skillDesc">Jinx fires a shock blast that deals 10/60/110/160/210 <span class="highlightAD">(+140% Attack Damage)</span> Physical Damage to the first enemy hit, revealing it if it is not stealthed and slowing it by 30/40/50/60/70% for 2 seconds.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Jinx/JinxSkill3.png" width ="64" height="64" alt="Jinx Skill 3">
+                        <figcaption class="skillToolTip">
+                            <p>Flame Chompers!</p>
+                            <p class="skillDesc">Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.</p>
+
+                            <p class="skillDesc">Jinx tosses out 3 chompers that, once armed, explode on contact with enemy champions, rooting the target for 1.5 seconds and dealing 80/135/190/245/300 <span class="highlightAP">(+100% Ability Power)</span> Magic Damage over 1.5 seconds to nearby enemies. Chompers last for 5 seconds.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="skill">
+                        <img src="../../images/skills/Jinx/JinxSkill4.png" width ="64" height="64" alt="Jinx Skill 4">
+                        <figcaption class="skillToolTip">
+                            <p>Super Mega Death Rocket!</p>
+                            <p class="skillDesc">Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.</p>
+
+                            <p class="skillDesc">Jinx fires a rocket that gains damage over the first second it travels. It explodes on the first enemy champion hit, dealing 125/175/225 <span class="highlightAD">(+50% bonus Attack Damage)</span> to 250/350/450 <span class="highlightAD">(+100% bonus Attack Damage)</span> Physical Damage plus 25/30/35% of the target's missing Health. Nearby enemies take 80% Damage.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer id="mainFooter">
+        <div class="footDiv">
+            Email: strayu@pomf.it
+        </div>
+        <div class="footDiv">
+            &copy; Jasper Dorado
+        </div>
+        <div class="footDiv" id="socialNet">
+            <a href=# id="facebook" class="socNetButton"></a>
+            <a href=# id="twitter" class="socNetButton"></a>
+            <a href=# id="google" class="socNetButton"></a>
+        </div>
+    </footer>
+</div>    
+</body>
+</html>
