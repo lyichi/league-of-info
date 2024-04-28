@@ -1,229 +1,476 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>LoI: Riven</title>
-    <link rel=stylesheet href="../../main.css" type="text/css">
-    <link rel=stylesheet href=".././champPage.css" type="text/css">
-    <link rel=icon href="../../images/favicon.ico">
-    
-    <style>
-        /* Stats CSS different for each character */
-        
-        #statAD {width: 280px;}
-        #statDef {width: 175px;}
-        #statAP {width: 35px;}
-        #statDiff {width: 280px;}
-        
-        /* Amount of skins for slideshow differs */
-        
-        #skinSlide > figure:nth-child(1) {
-            -webkit-animation: skinshow 18s 15s infinite;
-            -moz-animation: skinshow 18s 15s infinite;
-            -ms-animation: skinshow 18s 15s infinite;
-            -o-animation: skinshow 18s 15s infinite;
-            animation: skinshow 18s 15s infinite;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <title>LoI: Riven</title>
+        <link rel="stylesheet" href="../../main.css" type="text/css" />
+        <link rel="stylesheet" href=".././champPage.css" type="text/css" />
+        <link rel="icon" href="../../images/favicon.ico" />
 
-        #skinSlide > figure:nth-child(2) {
-            -webkit-animation: skinshow 18s 12s infinite;
-            -moz-animation: skinshow 18s 12s infinite;
-            -ms-animation: skinshow 18s 12s infinite;
-            -o-animation: skinshow 18s 12s infinite;
-            animation: skinshow 18s 12s infinite;
-        }
+        <style>
+            /* Stats CSS different for each character */
 
-        #skinSlide > figure:nth-child(3) {
-            -webkit-animation: skinshow 18s 9s infinite;
-            -moz-animation: skinshow 18s 9s infinite;
-            -ms-animation: skinshow 18s 9s infinite;
-            -o-animation: skinshow 18s 9s infinite;
-            animation: skinshow 18s 9s infinite;
-        }
+            #statAD {
+                width: 280px;
+            }
+            #statDef {
+                width: 175px;
+            }
+            #statAP {
+                width: 35px;
+            }
+            #statDiff {
+                width: 280px;
+            }
 
-        #skinSlide > figure:nth-child(4) {
-            -webkit-animation: skinshow 18s 6s infinite;
-            -moz-animation: skinshow 18s 6s infinite;
-            -ms-animation: skinshow 18s 6s infinite;
-            -o-animation: skinshow 18s 6s infinite;
-            animation: skinshow 18s 6s infinite;
-        }
+            /* Amount of skins for slideshow differs */
 
-        #skinSlide > figure:nth-child(5) {
-            -webkit-animation: skinshow 18s 3s infinite;
-            -moz-animation: skinshow 18s 3s infinite;
-            -ms-animation: skinshow 18s 3s infinite;
-            -o-animation: skinshow 18s 3s infinite;
-            animation: skinshow 18s 3s infinite;
-        }
+            #skinSlide > figure:nth-child(1) {
+                -webkit-animation: skinshow 18s 15s infinite;
+                -moz-animation: skinshow 18s 15s infinite;
+                -ms-animation: skinshow 18s 15s infinite;
+                -o-animation: skinshow 18s 15s infinite;
+                animation: skinshow 18s 15s infinite;
+            }
 
-        #skinSlide > figure:nth-child(6) {
-            -webkit-animation: skinshow 18s 0s infinite;
-            -moz-animation: skinshow 18s 0s infinite;
-            -ms-animation: skinshow 18s 0s infinite;
-            -o-animation: skinshow 18s 0s infinite;
-            animation: skinshow 18s 0s infinite;
-        }
-        
-        @-webkit-keyframes skinshow {
-            0%                  {opacity: 1}
-            8.335%              {opacity: 1}
-            16.67%              {opacity: 0}
-            83.33%              {opacity: 0}
-            91.66499999999999%  {opacity: 0}
-            100%                {opacity: 1}
-        }
-        
-        @-moz-keyframes skinshow {
-            0%                  {opacity: 1}
-            8.335%              {opacity: 1}
-            16.67%              {opacity: 0}
-            83.33%              {opacity: 0}
-            91.66499999999999%  {opacity: 0}
-            100%                {opacity: 1}
-        }
-        
-        @keyframes skinshow {
-            0%                  {opacity: 1}
-            8.335%              {opacity: 1}
-            16.67%              {opacity: 0}
-            83.33%              {opacity: 0}
-            91.66499999999999%  {opacity: 0}
-            100%                {opacity: 1}
-        }
-    </style>
-</head>
-<body>
-<div id="wrapper">
-    <header id="mainHeader">
-        <div>
-            <a href="../../index.html"><img src="../../images/logo.png" alt="logo" id="logo"></a>
-            <ul id="mainMenu">
-                <li class="btnMainMenu"><a href="../../champions/index.html">CHAMPIONS</a></li>
-                <li class="btnMainMenu"><a href="../../items/index.html">ITEMS</a></li>
-                <li class="btnMainMenu"><a href="../../lore/index.html">LORE</a></li>
-            </ul>
-        </div>
-    </header>
-    
-    <section id="mainSection">
-        <h2>Riven, the Exile</h2>
-        <section id="subSect1">
-            <div id="skinSlide">
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_5.jpg" width="216" height="392" alt="Riven Skin 5">
-                </figure>
+            #skinSlide > figure:nth-child(2) {
+                -webkit-animation: skinshow 18s 12s infinite;
+                -moz-animation: skinshow 18s 12s infinite;
+                -ms-animation: skinshow 18s 12s infinite;
+                -o-animation: skinshow 18s 12s infinite;
+                animation: skinshow 18s 12s infinite;
+            }
 
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_4.jpg" width="216" height="392" alt="Riven Skin 4">
-                </figure>
+            #skinSlide > figure:nth-child(3) {
+                -webkit-animation: skinshow 18s 9s infinite;
+                -moz-animation: skinshow 18s 9s infinite;
+                -ms-animation: skinshow 18s 9s infinite;
+                -o-animation: skinshow 18s 9s infinite;
+                animation: skinshow 18s 9s infinite;
+            }
 
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_3.jpg" width="216" height="392" alt="Riven Skin 3">
-                </figure>
+            #skinSlide > figure:nth-child(4) {
+                -webkit-animation: skinshow 18s 6s infinite;
+                -moz-animation: skinshow 18s 6s infinite;
+                -ms-animation: skinshow 18s 6s infinite;
+                -o-animation: skinshow 18s 6s infinite;
+                animation: skinshow 18s 6s infinite;
+            }
 
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_2.jpg" width="216" height="392" alt="Riven Skin 2">
-                </figure>
+            #skinSlide > figure:nth-child(5) {
+                -webkit-animation: skinshow 18s 3s infinite;
+                -moz-animation: skinshow 18s 3s infinite;
+                -ms-animation: skinshow 18s 3s infinite;
+                -o-animation: skinshow 18s 3s infinite;
+                animation: skinshow 18s 3s infinite;
+            }
 
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_1.jpg" width="216" height="392" alt="Riven Skin 1">
-                </figure>
+            #skinSlide > figure:nth-child(6) {
+                -webkit-animation: skinshow 18s 0s infinite;
+                -moz-animation: skinshow 18s 0s infinite;
+                -ms-animation: skinshow 18s 0s infinite;
+                -o-animation: skinshow 18s 0s infinite;
+                animation: skinshow 18s 0s infinite;
+            }
 
-                <figure>
-                    <img src="../../images/skins/Riven/Riven_0.jpg" width="216" height="392" alt="Riven Skin 0">
-                </figure>
-            </div>
+            @-webkit-keyframes skinshow {
+                0% {
+                    opacity: 1;
+                }
+                8.335% {
+                    opacity: 1;
+                }
+                16.67% {
+                    opacity: 0;
+                }
+                83.33% {
+                    opacity: 0;
+                }
+                91.66499999999999% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
 
-            <div id="lore">
-                <p>In Noxus, any citizen may rise to power regardless of race, gender, or social standing - strength is all that matters. It was with committed faith in this ideal that Riven strove to greatness. She showed early potential as a soldier, forcing herself to master the weight of a long sword when she was barely its height. She was ruthless and efficient as a warrior, but her true strength lay in her conviction. She entered battles without any trace of doubt in her mind: no ethical pause, no fear of death. Riven became a leader amongst her peers, poster child of the Noxian spirit. So exceptional was her passion that the High Command recognized her with a black stone rune sword forged and enchanted with Noxian sorcery. The weapon was heavier than a kite shield and nearly as broad - perfectly suited to her tastes. Soon after, she was deployed to Ionia as part of the Noxian invasion.</p>
+            @-moz-keyframes skinshow {
+                0% {
+                    opacity: 1;
+                }
+                8.335% {
+                    opacity: 1;
+                }
+                16.67% {
+                    opacity: 0;
+                }
+                83.33% {
+                    opacity: 0;
+                }
+                91.66499999999999% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
 
-                <p>What began as war quickly became extermination. Noxian soldiers followed the terrifying Zaunite war machines across fields of death. It wasn't the glorious combat for which Riven trained. She carried out the orders of her superiors, terminating the remnants of a beaten and fractured enemy with extreme prejudice. As the invasion continued, it became clear that the Ionian society would not be reformed, merely eliminated. During one bitter engagement, Riven's unit became surrounded by Ionian forces. They called for support as the enemy closed in around them. What they received instead was a barrage of biochemical terror launched by Singed. Riven watched as around her Ionian and Noxian alike fell victim to an unspeakably gruesome fate. She managed to escape the bombardment, though she could not erase the memory. Counted dead by Noxus, she saw an opportunity to start anew. She shattered her sword, severing ties with the past, and wandered in self-imposed exile - on a quest to seek atonement and a way to save the pure Noxian vision in which she believed.</p>
-
-                <p>"There is a place between war and murder in which our demons lurk."</p>
-            </div>
-        </section>
-        <section id="subSect2">
-            <h2>Stats and Abilities</h2>
-            <div id="stats">
-                <div class="statContainer"><p>Attack Power:</p><div id="statAD" class="statBar">8</div></div>
-                <div class="statContainer"><p>Defense Power:</p><div id="statDef" class="statBar">5</div></div>
-                <div class="statContainer"><p>Ability Power:</p><div id="statAP" class="statBar">1</div></div>
-                <div class="statContainer"><p>Difficulty:</p><div id="statDiff" class="statBar">8</div></div>
-            </div>
-
-            <div id="skills">
-                <div id="skillsContainer">
-                    <figure class="skill">
-                        <img src="../../images/skills/Riven/RivenSkill0.png" width ="64" height="64" alt="Riven Passive">
-                        <figcaption class="skillToolTip">
-                            <p>Runic Blade</p>
-                            <p class="skillDesc">Riven's abilities charge her blade, causing her basic attacks to deal bonus physical damage. Riven's blade may be charged up to three times and expends one charge per attack.</p>
-
-                            <p class="skillDesc">Discipline of Might: Riven gains 6% Spell Vamp, increasing by 1% for every 6 Bonus Attack Damage.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="skill">
-                        <img src="../../images/skills/Riven/RivenSkill1.png" width ="64" height="64" alt="Riven Skill 1">
-                        <figcaption class="skillToolTip">
-                            <p>Broken Wings</p>
-                            <p class="skillDesc">Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies.</p>
-
-                            <p class="skillDesc">Riven strikes out in front of her in a short line. This ability may be reactivated 2 additional times.
-                                <br>1st and 2nd Use: Slashes forward, dealing 10/30/50/70/90 <span class="highlightAD">(+40/45/50/55/60% Attack Damage)</span> physical damage to all units she comes in contact with.
-                                <br>3rd Use: Leaps forward and slams the ground dealing 10/30/50/70/90 <span class="highlightAD">(+40/45/50/55/60% Attack Damage)</span> physical damage and knocking nearby enemies up. This leap can cross unpathable terrain. Riven will target the unit your cursor is hovering over, or if no targets are present, Riven will simply strike the direction she is currently facing.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="skill">
-                        <img src="../../images/skills/Riven/RivenSkill2.png" width ="64" height="64" alt="Riven Skill 2">
-                        <figcaption class="skillToolTip">
-                            <p>Ki Burst</p>
-                            <p class="skillDesc">Riven emits a Ki Burst, damaging and stunning nearby enemies.</p>
-
-                            <p class="skillDesc">Riven's sword emits a burst of runic energy that shocks nearby enemies, dealing 50/80/110/140/170 <span class="highlightAD">(+100% bonus Attack Damage)</span> physical damage and stunning them for 0.75 seconds.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="skill">
-                        <img src="../../images/skills/Riven/RivenSkill3.png" width ="64" height="64" alt="Riven Skill 3">
-                        <figcaption class="skillToolTip">
-                            <p>Valor</p>
-                            <p class="skillDesc">Riven steps forward a short distance and blocks incoming damage.</p>
-
-                            <p class="skillDesc">Riven does a quick dash in the direction of your cursor and becomes shielded, blocking up to 90/120/150/180/210 <span class="highlightAD">(+100% bonus Attack Damage)</span> incoming damage for 1.5 seconds.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="skill">
-                        <img src="../../images/skills/Riven/RivenSkill4.png" width ="64" height="64" alt="Riven Skill 4">
-                        <figcaption class="skillToolTip">
-                            <p>Blade of the Exile</p>
-                            <p class="skillDesc">Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once.</p>
-
-                            <p class="skillDesc">Riven's weapon surges with spiritual energy for 15 seconds, granting her 20% extra Attack Damage <span class="highlightAD">(+20% bonus Attack Damage)</span>, increased Range on her damaging spells and attacks, and the ability to use Wind Slash once.
-                                <br>Wind Slash: Riven fires a shockwave that deals from 80/120/160 <span class="highlightAD">(+60% bonus Attack Damage)</span> to 240/360/480 <span class="highlightAD">(+180% bonus Attack Damage)</span> physical damage to all enemies hit, increasing based on how much Health they are missing.</p>
-                        </figcaption>
-                    </figure>
+            @keyframes skinshow {
+                0% {
+                    opacity: 1;
+                }
+                8.335% {
+                    opacity: 1;
+                }
+                16.67% {
+                    opacity: 0;
+                }
+                83.33% {
+                    opacity: 0;
+                }
+                91.66499999999999% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="mainHeader">
+                <div>
+                    <a href="../../index.html"
+                        ><img src="../../images/logo.png" alt="logo" id="logo"
+                    /></a>
+                    <ul id="mainMenu">
+                        <li class="btnMainMenu">
+                            <a href="../../champions/index.html">CHAMPIONS</a>
+                        </li>
+                        <li class="btnMainMenu">
+                            <a href="../../items/index.html">ITEMS</a>
+                        </li>
+                        <li class="btnMainMenu">
+                            <a href="../../lore/index.html">LORE</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-    </section>
-    
-    <footer id="mainFooter">
-        <div class="footDiv">
-            Email: strayu@pomf.it
+            </header>
+
+            <section id="mainSection">
+                <h2>Riven, the Exile</h2>
+                <section id="subSect1">
+                    <div id="skinSlide">
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_5.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 5"
+                            />
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_4.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 4"
+                            />
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_3.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 3"
+                            />
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_2.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 2"
+                            />
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_1.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 1"
+                            />
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../../images/skins/riven/Riven_0.jpg"
+                                width="216"
+                                height="392"
+                                alt="Riven Skin 0"
+                            />
+                        </figure>
+                    </div>
+
+                    <div id="lore">
+                        <p>
+                            In Noxus, any citizen may rise to power regardless
+                            of race, gender, or social standing - strength is
+                            all that matters. It was with committed faith in
+                            this ideal that Riven strove to greatness. She
+                            showed early potential as a soldier, forcing herself
+                            to master the weight of a long sword when she was
+                            barely its height. She was ruthless and efficient as
+                            a warrior, but her true strength lay in her
+                            conviction. She entered battles without any trace of
+                            doubt in her mind: no ethical pause, no fear of
+                            death. Riven became a leader amongst her peers,
+                            poster child of the Noxian spirit. So exceptional
+                            was her passion that the High Command recognized her
+                            with a black stone rune sword forged and enchanted
+                            with Noxian sorcery. The weapon was heavier than a
+                            kite shield and nearly as broad - perfectly suited
+                            to her tastes. Soon after, she was deployed to Ionia
+                            as part of the Noxian invasion.
+                        </p>
+
+                        <p>
+                            What began as war quickly became extermination.
+                            Noxian soldiers followed the terrifying Zaunite war
+                            machines across fields of death. It wasn't the
+                            glorious combat for which Riven trained. She carried
+                            out the orders of her superiors, terminating the
+                            remnants of a beaten and fractured enemy with
+                            extreme prejudice. As the invasion continued, it
+                            became clear that the Ionian society would not be
+                            reformed, merely eliminated. During one bitter
+                            engagement, Riven's unit became surrounded by Ionian
+                            forces. They called for support as the enemy closed
+                            in around them. What they received instead was a
+                            barrage of biochemical terror launched by Singed.
+                            Riven watched as around her Ionian and Noxian alike
+                            fell victim to an unspeakably gruesome fate. She
+                            managed to escape the bombardment, though she could
+                            not erase the memory. Counted dead by Noxus, she saw
+                            an opportunity to start anew. She shattered her
+                            sword, severing ties with the past, and wandered in
+                            self-imposed exile - on a quest to seek atonement
+                            and a way to save the pure Noxian vision in which
+                            she believed.
+                        </p>
+
+                        <p>
+                            "There is a place between war and murder in which
+                            our demons lurk."
+                        </p>
+                    </div>
+                </section>
+                <section id="subSect2">
+                    <h2>Stats and Abilities</h2>
+                    <div id="stats">
+                        <div class="statContainer">
+                            <p>Attack Power:</p>
+                            <div id="statAD" class="statBar">8</div>
+                        </div>
+                        <div class="statContainer">
+                            <p>Defense Power:</p>
+                            <div id="statDef" class="statBar">5</div>
+                        </div>
+                        <div class="statContainer">
+                            <p>Ability Power:</p>
+                            <div id="statAP" class="statBar">1</div>
+                        </div>
+                        <div class="statContainer">
+                            <p>Difficulty:</p>
+                            <div id="statDiff" class="statBar">8</div>
+                        </div>
+                    </div>
+
+                    <div id="skills">
+                        <div id="skillsContainer">
+                            <figure class="skill">
+                                <img
+                                    src="../../images/skills/riven/rivenSkill0.png"
+                                    width="64"
+                                    height="64"
+                                    alt="Riven Passive"
+                                />
+                                <figcaption class="skillToolTip">
+                                    <p>Runic Blade</p>
+                                    <p class="skillDesc">
+                                        Riven's abilities charge her blade,
+                                        causing her basic attacks to deal bonus
+                                        physical damage. Riven's blade may be
+                                        charged up to three times and expends
+                                        one charge per attack.
+                                    </p>
+
+                                    <p class="skillDesc">
+                                        Discipline of Might: Riven gains 6%
+                                        Spell Vamp, increasing by 1% for every 6
+                                        Bonus Attack Damage.
+                                    </p>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="skill">
+                                <img
+                                    src="../../images/skills/riven/rivenSkill1.png"
+                                    width="64"
+                                    height="64"
+                                    alt="Riven Skill 1"
+                                />
+                                <figcaption class="skillToolTip">
+                                    <p>Broken Wings</p>
+                                    <p class="skillDesc">
+                                        Riven lashes out in a series of strikes.
+                                        This ability can be reactivated three
+                                        times in a short time frame with the
+                                        third hit knocking back nearby enemies.
+                                    </p>
+
+                                    <p class="skillDesc">
+                                        Riven strikes out in front of her in a
+                                        short line. This ability may be
+                                        reactivated 2 additional times.
+                                        <br />1st and 2nd Use: Slashes forward,
+                                        dealing 10/30/50/70/90
+                                        <span class="highlightAD"
+                                            >(+40/45/50/55/60% Attack
+                                            Damage)</span
+                                        >
+                                        physical damage to all units she comes
+                                        in contact with. <br />3rd Use: Leaps
+                                        forward and slams the ground dealing
+                                        10/30/50/70/90
+                                        <span class="highlightAD"
+                                            >(+40/45/50/55/60% Attack
+                                            Damage)</span
+                                        >
+                                        physical damage and knocking nearby
+                                        enemies up. This leap can cross
+                                        unpathable terrain. Riven will target
+                                        the unit your cursor is hovering over,
+                                        or if no targets are present, Riven will
+                                        simply strike the direction she is
+                                        currently facing.
+                                    </p>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="skill">
+                                <img
+                                    src="../../images/skills/riven/rivenSkill2.png"
+                                    width="64"
+                                    height="64"
+                                    alt="Riven Skill 2"
+                                />
+                                <figcaption class="skillToolTip">
+                                    <p>Ki Burst</p>
+                                    <p class="skillDesc">
+                                        Riven emits a Ki Burst, damaging and
+                                        stunning nearby enemies.
+                                    </p>
+
+                                    <p class="skillDesc">
+                                        Riven's sword emits a burst of runic
+                                        energy that shocks nearby enemies,
+                                        dealing 50/80/110/140/170
+                                        <span class="highlightAD"
+                                            >(+100% bonus Attack Damage)</span
+                                        >
+                                        physical damage and stunning them for
+                                        0.75 seconds.
+                                    </p>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="skill">
+                                <img
+                                    src="../../images/skills/riven/rivenSkill3.png"
+                                    width="64"
+                                    height="64"
+                                    alt="Riven Skill 3"
+                                />
+                                <figcaption class="skillToolTip">
+                                    <p>Valor</p>
+                                    <p class="skillDesc">
+                                        Riven steps forward a short distance and
+                                        blocks incoming damage.
+                                    </p>
+
+                                    <p class="skillDesc">
+                                        Riven does a quick dash in the direction
+                                        of your cursor and becomes shielded,
+                                        blocking up to 90/120/150/180/210
+                                        <span class="highlightAD"
+                                            >(+100% bonus Attack Damage)</span
+                                        >
+                                        incoming damage for 1.5 seconds.
+                                    </p>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="skill">
+                                <img
+                                    src="../../images/skills/riven/rivenSkill4.png"
+                                    width="64"
+                                    height="64"
+                                    alt="Riven Skill 4"
+                                />
+                                <figcaption class="skillToolTip">
+                                    <p>Blade of the Exile</p>
+                                    <p class="skillDesc">
+                                        Riven empowers her keepsake weapon with
+                                        energy, and gains Attack Damage and
+                                        Range. During this time, she also gains
+                                        the ability to use Wind Slash, a
+                                        powerful ranged attack, once.
+                                    </p>
+
+                                    <p class="skillDesc">
+                                        Riven's weapon surges with spiritual
+                                        energy for 15 seconds, granting her 20%
+                                        extra Attack Damage
+                                        <span class="highlightAD"
+                                            >(+20% bonus Attack Damage)</span
+                                        >, increased Range on her damaging
+                                        spells and attacks, and the ability to
+                                        use Wind Slash once. <br />Wind Slash:
+                                        Riven fires a shockwave that deals from
+                                        80/120/160
+                                        <span class="highlightAD"
+                                            >(+60% bonus Attack Damage)</span
+                                        >
+                                        to 240/360/480
+                                        <span class="highlightAD"
+                                            >(+180% bonus Attack Damage)</span
+                                        >
+                                        physical damage to all enemies hit,
+                                        increasing based on how much Health they
+                                        are missing.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <footer id="mainFooter">
+                <div class="footDiv">Email: strayu@pomf.it</div>
+                <div class="footDiv">&copy; Jasper Dorado</div>
+                <div class="footDiv" id="socialNet">
+                    <a href="#" id="facebook" class="socNetButton"></a>
+                    <a href="#" id="twitter" class="socNetButton"></a>
+                    <a href="#" id="google" class="socNetButton"></a>
+                </div>
+            </footer>
         </div>
-        <div class="footDiv">
-            &copy; Jasper Dorado
-        </div>
-        <div class="footDiv" id="socialNet">
-            <a href=# id="facebook" class="socNetButton"></a>
-            <a href=# id="twitter" class="socNetButton"></a>
-            <a href=# id="google" class="socNetButton"></a>
-        </div>
-    </footer>
-</div>    
-</body>
+    </body>
 </html>
